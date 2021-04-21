@@ -1,0 +1,9 @@
+version: '3'
+services:
+    maker:
+        container_name: nvhpc_test_labmda
+        image: nvcr.io/nvidia/nvhpc:20.9-devel-ubuntu20.04
+        volumes:
+            - "${PWD}/:/root/work/"
+        #runtime: nvidia
+        working_dir: /root/work/
